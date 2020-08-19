@@ -10,9 +10,9 @@
 		A9E5F21724ED5F5500BCC8CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E5F21624ED5F5500BCC8CB /* AppDelegate.swift */; };
 		A9E5F21924ED5F5500BCC8CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E5F21824ED5F5500BCC8CB /* SceneDelegate.swift */; };
 		A9E5F21B24ED5F5500BCC8CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E5F21A24ED5F5500BCC8CB /* ViewController.swift */; };
-		A9E5F21E24ED5F5500BCC8CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E5F21C24ED5F5500BCC8CB /* Main.storyboard */; };
 		A9E5F22024ED5F5800BCC8CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9E5F21F24ED5F5800BCC8CB /* Assets.xcassets */; };
-		A9E5F22324ED5F5800BCC8CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E5F22124ED5F5800BCC8CB /* LaunchScreen.storyboard */; };
+		A9E5F22E24ED606000BCC8CB /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E5F22D24ED606000BCC8CB /* PersonViewModel.swift */; };
+		A9E5F23124ED60C500BCC8CB /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E5F23024ED60C500BCC8CB /* BindingTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		A9E5F21624ED5F5500BCC8CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9E5F21824ED5F5500BCC8CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A9E5F21A24ED5F5500BCC8CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A9E5F21D24ED5F5500BCC8CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9E5F21F24ED5F5800BCC8CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A9E5F22224ED5F5800BCC8CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9E5F22424ED5F5800BCC8CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9E5F22D24ED606000BCC8CB /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		A9E5F23024ED60C500BCC8CB /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,47 @@
 		A9E5F21524ED5F5500BCC8CB /* BindingTextField */ = {
 			isa = PBXGroup;
 			children = (
-				A9E5F21624ED5F5500BCC8CB /* AppDelegate.swift */,
-				A9E5F21824ED5F5500BCC8CB /* SceneDelegate.swift */,
-				A9E5F21A24ED5F5500BCC8CB /* ViewController.swift */,
-				A9E5F21C24ED5F5500BCC8CB /* Main.storyboard */,
+				A9E5F22A24ED603000BCC8CB /* System Delegate */,
+				A9E5F22F24ED60B600BCC8CB /* Binding */,
+				A9E5F22C24ED604200BCC8CB /* ViewModel */,
+				A9E5F22B24ED603C00BCC8CB /* Controllers */,
 				A9E5F21F24ED5F5800BCC8CB /* Assets.xcassets */,
-				A9E5F22124ED5F5800BCC8CB /* LaunchScreen.storyboard */,
 				A9E5F22424ED5F5800BCC8CB /* Info.plist */,
 			);
 			path = BindingTextField;
+			sourceTree = "<group>";
+		};
+		A9E5F22A24ED603000BCC8CB /* System Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				A9E5F21624ED5F5500BCC8CB /* AppDelegate.swift */,
+				A9E5F21824ED5F5500BCC8CB /* SceneDelegate.swift */,
+			);
+			path = "System Delegate";
+			sourceTree = "<group>";
+		};
+		A9E5F22B24ED603C00BCC8CB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A9E5F21A24ED5F5500BCC8CB /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A9E5F22C24ED604200BCC8CB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A9E5F22D24ED606000BCC8CB /* PersonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A9E5F22F24ED60B600BCC8CB /* Binding */ = {
+			isa = PBXGroup;
+			children = (
+				A9E5F23024ED60C500BCC8CB /* BindingTextField.swift */,
+			);
+			path = Binding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9E5F22324ED5F5800BCC8CB /* LaunchScreen.storyboard in Resources */,
 				A9E5F22024ED5F5800BCC8CB /* Assets.xcassets in Resources */,
-				A9E5F21E24ED5F5500BCC8CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,30 +170,13 @@
 			files = (
 				A9E5F21B24ED5F5500BCC8CB /* ViewController.swift in Sources */,
 				A9E5F21724ED5F5500BCC8CB /* AppDelegate.swift in Sources */,
+				A9E5F23124ED60C500BCC8CB /* BindingTextField.swift in Sources */,
 				A9E5F21924ED5F5500BCC8CB /* SceneDelegate.swift in Sources */,
+				A9E5F22E24ED606000BCC8CB /* PersonViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		A9E5F21C24ED5F5500BCC8CB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A9E5F21D24ED5F5500BCC8CB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A9E5F22124ED5F5800BCC8CB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A9E5F22224ED5F5800BCC8CB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A9E5F22524ED5F5800BCC8CB /* Debug */ = {
@@ -293,7 +306,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.jean.BindingTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.jean.BindingTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
