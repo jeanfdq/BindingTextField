@@ -13,6 +13,7 @@
 		A9E5F22024ED5F5800BCC8CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9E5F21F24ED5F5800BCC8CB /* Assets.xcassets */; };
 		A9E5F22E24ED606000BCC8CB /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E5F22D24ED606000BCC8CB /* PersonViewModel.swift */; };
 		A9E5F23124ED60C500BCC8CB /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E5F23024ED60C500BCC8CB /* BindingTextField.swift */; };
+		A9E5F23424ED646300BCC8CB /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E5F23324ED646300BCC8CB /* ExtensionUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A9E5F22424ED5F5800BCC8CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9E5F22D24ED606000BCC8CB /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
 		A9E5F23024ED60C500BCC8CB /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
+		A9E5F23324ED646300BCC8CB /* ExtensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		A9E5F21524ED5F5500BCC8CB /* BindingTextField */ = {
 			isa = PBXGroup;
 			children = (
+				A9E5F23224ED645400BCC8CB /* Extension */,
 				A9E5F22A24ED603000BCC8CB /* System Delegate */,
 				A9E5F22F24ED60B600BCC8CB /* Binding */,
 				A9E5F22C24ED604200BCC8CB /* ViewModel */,
@@ -97,6 +100,14 @@
 				A9E5F23024ED60C500BCC8CB /* BindingTextField.swift */,
 			);
 			path = Binding;
+			sourceTree = "<group>";
+		};
+		A9E5F23224ED645400BCC8CB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A9E5F23324ED646300BCC8CB /* ExtensionUIView.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +181,7 @@
 			files = (
 				A9E5F21B24ED5F5500BCC8CB /* ViewController.swift in Sources */,
 				A9E5F21724ED5F5500BCC8CB /* AppDelegate.swift in Sources */,
+				A9E5F23424ED646300BCC8CB /* ExtensionUIView.swift in Sources */,
 				A9E5F23124ED60C500BCC8CB /* BindingTextField.swift in Sources */,
 				A9E5F21924ED5F5500BCC8CB /* SceneDelegate.swift in Sources */,
 				A9E5F22E24ED606000BCC8CB /* PersonViewModel.swift in Sources */,

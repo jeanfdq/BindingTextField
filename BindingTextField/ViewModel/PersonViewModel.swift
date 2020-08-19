@@ -10,9 +10,9 @@ import Foundation
 
 struct PersonViewModel {
     
-    let name:String
-    let lastName:String
-    let phoneNumber:Int
-    let cityName:String
+    var name:String = ""
+    var lastName:String = ""
+    var phoneNumber:String = ""
+    var cityName:String = ""
     
 }
